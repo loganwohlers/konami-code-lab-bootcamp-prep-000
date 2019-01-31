@@ -11,7 +11,7 @@ const codes = [
   "a"
 ];
 
-var index=0;
+
 
 function onKeyDownHandler(e) {
   const key = e.key;
@@ -29,6 +29,7 @@ function onKeyDownHandler(e) {
 }
 
 function init() {
+  var index=0;
   document.body.addEventListener('keydown', onKeyDownHandler);
 }
 
