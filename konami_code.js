@@ -14,21 +14,21 @@ const codes = [
 function init() {
   let index = 0;
   
-  // function onKeyDownHandler(e) {
+  function onKeyDownHandler(e) {
     
-  //   if(key === codes[index]){
-  //     index++;
-  //     if(index===codes.length){
-  //       alert("Yay!");
-  //       index=0;
-  //     }
-  //   } else {
-  //     alert("wrong code!");
-  //     index=0;
-  //   }
+    if(key === codes[index]){
+      index++;
+      if(index===codes.length){
+        alert("Yay!");
+        index=0;
+      }
+    } else {
+      alert("wrong code!");
+      index=0;
+    }
   
-  // }
+  }
   
-  // document.body.addEventListener('keydown', onKeyDownHandler);
+  document.body.addEventListener('keydown', onKeyDownHandler);
 }
 
