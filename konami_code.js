@@ -22,7 +22,7 @@ function init() {
     const key = e.key;
     
     if(codes[index] === key) {
-      index = ++index
+      ++index
     } else {
       window.alert("Wrong code!")
       index = 0
