@@ -11,10 +11,6 @@ const codes = [
   "a"
 ];
 
-
-
-
-
 function init() {
   let idx = 0;
   
