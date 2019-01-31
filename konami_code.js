@@ -11,9 +11,11 @@ const codes = [
   "a"
 ];
 
+init();
+
+
 let index=0;
 
-init();
 
 function onKeyDownHandler(e) {
   const key = e.key;
