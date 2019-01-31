@@ -18,33 +18,20 @@ const codes = [
 function init() {
   let index = 0;
   
-  function onKeyDownHandler(e) {
-    const key = e.key;
+  // function onKeyDownHandler(e) {
     
-    if(codes[index] === key) {
-      ++index
-    } else {
-      window.alert("Wrong code!")
-      index = 0
-    }
-    
-    if(index === codes.length) {
-      window.alert("Yay!")
-      index = 0
-    }
-    
-    // if(key === codes[index]){
-    //   index++;
-    //   if(index===codes.length){
-    //     alert("Yay!");
-    //     index=0;
-    //   }
-    // } else {
-    //   alert("wrong code!");
-    //   index=0;
-    // }
+  //   if(key === codes[index]){
+  //     index++;
+  //     if(index===codes.length){
+  //       alert("Yay!");
+  //       index=0;
+  //     }
+  //   } else {
+  //     alert("wrong code!");
+  //     index=0;
+  //   }
   
-  }
+  // }
   
   document.body.addEventListener('keydown', onKeyDownHandler);
 }
