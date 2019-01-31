@@ -11,9 +11,13 @@ const codes = [
   "a"
 ];
 
-function init() {
-  let idx = 0
 
+
+
+
+function init() {
+  let idx = 0;
+  
   document.body.addEventListener("keydown", (e) => {
     const key = e.key
     
@@ -25,4 +29,25 @@ function init() {
     }
     
   });
+  
+  // function onKeyDownHandler(e) {
+    
+  //   if(key === codes[index]){
+  //     index++;
+  //     if(index===codes.length){
+  //       alert("Yay!");
+  //       index=0;
+  //     }
+  //   } else {
+  //     alert("wrong code!");
+  //     index=0;
+  //   }
+  
+  // }
+  
+  // document.body.addEventListener('keydown', onKeyDownHandler);
 }
+
+
+init();
+
