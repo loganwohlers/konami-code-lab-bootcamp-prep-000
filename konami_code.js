@@ -16,7 +16,7 @@ const codes = [
 
 
 function init() {
-  var index=0;
+  let index = 0;
   
   function onKeyDownHandler(e) {
     const key = e.key;
