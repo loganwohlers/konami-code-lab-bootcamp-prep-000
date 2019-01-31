@@ -12,23 +12,35 @@ const codes = [
 ];
 
 function init() {
-  let index = 0;
+  let idx = 0;
   
-  function onKeyDownHandler(e) {
+  document.body.addEventListener("keydown", (e) => {
+    const key = e.key
     
-    if(key === codes[index]){
-      index++;
-      if(index===codes.length){
-        alert("Yay!");
-        index=0;
-      }
-    } else {
-      alert("wrong code!");
-      index=0;
+    idx = (codes[idx] === key) ? ++idx : 0
+    
+    if (idx === codes.length) {
+      window.alert("Hurray!");
+      idx = 0
     }
+    
+  });
   
-  }
+  // function onKeyDownHandler(e) {
+    
+  //   if(key === codes[index]){
+  //     index++;
+  //     if(index===codes.length){
+  //       alert("Yay!");
+  //       index=0;
+  //     }
+  //   } else {
+  //     alert("wrong code!");
+  //     index=0;
+  //   }
   
-  document.body.addEventListener('keydown', onKeyDownHandler);
+  // }
+  
+  // document.body.addEventListener('keydown', onKeyDownHandler);
 }
 
